@@ -4,7 +4,8 @@ body {
     background-image: linear-gradient(to right, red, blue);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.container{
+
+.container {
     margin: 150px 550px;
     border-radius: 10px;
     border: 2px solid white;
@@ -15,40 +16,90 @@ body {
     font-size: x-large;
     font-weight: bolder;
 }
-h1{
+
+h1 {
     color: darkred;
     text-align: center;
 }
-h2{
+
+h2 {
     text-align: center;
     margin-top: 70px;
     color: darkblue;
 }
 
-input{
+input {
     padding: 20px;
     border-radius: 10px;
-    border:5 px solid red;
+    border: 5px solid red;
     width: 85%;
     height: 5vh;
     margin: 20px 20px;
     font-size: xx-large;
     font-weight: bolder;
-   
 }
-button{
+
+button {
     display: inline;
-    margin: 30 px 250 px;
-    padding: 25 px;
-    width: 40 %;
-    border-radius: 11 px;
-    border:5 px solid white;
+    margin: 30px 250px;
+    padding: 25px;
+    width: 40%;
+    border-radius: 11px;
+    border: 5px solid white;
     color: white;
     font-size: xx-large;
     background-color: darkblue;
     font-weight: 600;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: red;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px; 
+        width: 90%; 
+    }
+
+    input, button {
+        width: 90%; 
+        margin: 10px auto; 
+        padding: 15px; 
+    }
+
+    h1, h2 {
+        font-size: large; 
+    }
+
+    button {
+        padding: 15px;
+        font-size: large; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px; 
+        height: auto; 
+    }
+
+    h1 {
+        font-size: medium; 
+    }
+
+    h2 {
+        margin-top: 20px; 
+    }
+
+    input, button {
+        padding: 10px; 
+    }
+
+    button {
+        width: 100%; 
+    }
 }
